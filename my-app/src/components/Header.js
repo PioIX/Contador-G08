@@ -30,13 +30,26 @@ export default function Button() {
 import Link from 'next/link';
 import styles from './page.module.css';
 
+export default function Header({text}){
+  return (
+    <header className={styles.header}>
+      <div className={styles.logo}>{text}</div>
+    </header>
+  );
+};
+
+/*
+import Link from 'next/link';
+import styles from './page.module.css';
+
 export default function Header(){
   return (
     <header className={styles.header}>
-      <div className={styles.logo}>Classroom</div>
+      <div className={styles.logo}>Home</div>
       <nav className={styles.nav}>
         <Link href="/classroom">Home</Link>
       </nav>
     </header>
   );
 };
+*/
